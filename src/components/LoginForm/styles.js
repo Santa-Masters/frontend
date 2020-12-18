@@ -5,10 +5,15 @@ export const MainLogin = styled.main`
   border: 4px solid #0a4878;
   box-sizing: border-box;
   border-radius: 20px;
-  margin: 8px;
+  margin: 8px auto;
   font-family: "Assistant";
   font-weight: 500;
   background-color: ${Colors.graySecondary};
+  max-width: 40%;
+  @media (max-width: 1024px) {
+    min-width: 99%;
+    margin: 8px 4px;
+  }
 `
 
 export const ImageLogin = styled.img`
@@ -28,7 +33,7 @@ export const ImageLogin = styled.img`
 export const Text = styled.p`
   text-align: center;
   color: #0a4878;
-  font-size: 24px;
+  font-size: 1.5em;
   margin: 0;
   ${props =>
     props.width &&
